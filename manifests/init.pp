@@ -295,10 +295,6 @@
 #   Specify a custom docker command name
 #   Default is set on a per system basis in docker::params
 #
-# [*daemon_subcommand*]
-#  Specify a subcommand/flag for running docker as daemon
-#  Default is set on a per system basis in docker::params
-#
 # [*docker_users*]
 #   Specify an array of users to add to the docker group
 #   Default is empty
@@ -413,7 +409,6 @@ class docker(
   $package_name                      = $docker::params::package_name,
   $service_name                      = $docker::params::service_name,
   $docker_command                    = $docker::params::docker_command,
-  $daemon_subcommand                 = $docker::params::daemon_subcommand,
   $docker_users                      = [],
   $docker_group                      = $docker::params::docker_group,
   $daemon_environment_files          = [],

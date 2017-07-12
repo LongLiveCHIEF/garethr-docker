@@ -58,9 +58,8 @@ class docker::params {
   $manage_kernel                     = true
   $package_name_default              = 'docker-engine'
   $service_name_default              = 'docker'
-  $docker_command_default            = 'docker'
+  $docker_command_default            = 'dockerd'
   $docker_group_default              = 'docker'
-  $daemon_subcommand                 = 'daemon'
   $storage_devs                      = undef
   $storage_vg                        = undef
   $storage_root_size                 = undef
